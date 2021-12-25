@@ -3,18 +3,22 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     title: "GITHUB BRANCHING MERGE",
-    home: MyApp(),
+    home: MySecondBranch(),
   ));
 }
 
-class MyApp extends StatefulWidget {
+class MySecondBranch extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _MySecondBranchState createState() => _MySecondBranchState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MySecondBranchState extends State<MySecondBranch> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My Second Branch Manager"),
+      ),
+    );
   }
 }
